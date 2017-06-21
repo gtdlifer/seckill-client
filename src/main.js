@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.prototype.$bus = bus
 Vue.prototype.$api = axios.create({
-  baseURL: 'http://localhost:3000/',
+  baseURL: `http://${location.hostname}:3000/`,
   timeout: 1000
 })
 
