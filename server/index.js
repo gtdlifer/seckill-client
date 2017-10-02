@@ -1,10 +1,13 @@
 const serve = require('koa-static');
 const Koa = require('koa');
 const app = new Koa();
+const path = require('path');
 
-app.use(serve(__dirname + '/static'))
+app.use(serve(path.join(__dirname, '../static')))
 
-app.use(serve(__dirname + '/'))
+app.use(serve(path.join(__dirname, '../')))
+
+app.use(serve(path.join(__dirname, '../dist')))
 
 app.listen(3030);
 
