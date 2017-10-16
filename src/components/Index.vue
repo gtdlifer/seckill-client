@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div style="position:absolute;left:5px;top:255px">如需联系，请扫码加微信：<br /><img width="300" src="/static/timg.jpeg" /></div>
     <div class="main">
       <div class="wraper">
         <table width="100%" align="center" class="index_table" border="0" cellspacing="0" cellpadding="0">
